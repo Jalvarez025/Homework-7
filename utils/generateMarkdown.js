@@ -23,7 +23,7 @@ function renderLicenseSection(license) {
 function generateMarkdown(data) {
   return `# Me
   ![Github license]()
-  ${varName}
+  
   
   ## Description
   
@@ -61,4 +61,4 @@ function generateMarkdown(data) {
 // `;
 }
 
-module.exports = generateMarkdown(data);
+module.exports = generateMarkdown;
