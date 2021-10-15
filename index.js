@@ -61,11 +61,11 @@ function writeToFile(fileName, data) {
 
 // TODO: Create a function to initialize app
 function init() {
-    writeToFile()
+    //writeToFile()
     askQuestions()
         // Use writeFileSync method to use promises instead of a callback function
-        .then((answers) => fs.writeFileSync('index.html', generateMarkdown(answers)))
-        .then(() => console.log('Successfully wrote to index.html'))
+        .then((answers) => fs.writeFileSync('index.md', generateMarkdown(answers)))
+        .then(() => console.log('Successfully wrote to index.md'))
         .catch((err) => console.error(err));
 
 };
