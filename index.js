@@ -8,12 +8,12 @@ const askQuestions = () => {
     return inquirer.prompt([
         {
             type: 'input',
-            name: 'q1',
+            name: 'github',
             message: 'Github?',
         },
         {
             type: 'input',
-            name: 'q2',
+            name: 'email',
             message: 'Email?',
         },
         {
@@ -23,32 +23,32 @@ const askQuestions = () => {
         },
         {
             type: 'input',
-            name: 'q4',
+            name: 'description',
             message: 'Project description?',
         },
         {
             type: 'input',
-            name: 'q5',
+            name: 'license',
             message: 'What kind of license did you use?',
         },
         {
             type: 'input',
-            name: 'q6',
+            name: 'command',
             message: 'What command should be run to install dependencies?',
         },
         {
             type: 'input',
-            name: 'q7',
+            name: 'tests',
             message: 'What command should be run to run tests?',
         },
         {
             type: 'input',
-            name: 'q8',
+            name: 'info',
             message: 'What does the user need to know about using the repo?',
         },
         {
             type: 'input',
-            name: 'q9',
+            name: 'contributing',
             message: 'What does the user need to know about contributing to the repo?',
         }
     ]);

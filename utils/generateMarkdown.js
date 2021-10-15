@@ -24,7 +24,16 @@ function generateMarkdown(data) {
   return `# Me
   ![Github license]()
   
-  
+  ${github}
+  ${email}
+  ${fileName}
+  ${description}
+  ${license}
+  ${command}
+  ${tests}
+  ${info}
+  ${contributing}
+
   ## Description
   
   ## Table of Contents
