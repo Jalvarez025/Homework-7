@@ -1,7 +1,7 @@
 // TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
 function renderLicenseBadge(license) {
-
+  var varName = '[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)'
   return varName
 }
 
@@ -23,6 +23,7 @@ function renderLicenseSection(license) {
 function generateMarkdown(data) {
   return `# Me
   ![Github license]()
+  ${varName}
   
   ## Description
   

@@ -18,7 +18,7 @@ const askQuestions = () => {
         },
         {
             type: 'input',
-            name: 'q3',
+            name: 'fileName',
             message: 'Project name?',
         },
         {
@@ -55,13 +55,14 @@ const askQuestions = () => {
 }
 
 // TODO: Create a function to write README file
-function writeToFile(data) {
+function writeToFile(fileName, data) {
     fs.writeFile(generateMarkdown(data))
 }
 
 // TODO: Create a function to initialize app
 function init() {
-    promptUser()
+    writeToFile()
+    askQuestions()
         // Use writeFileSync method to use promises instead of a callback function
         .then((answers) => fs.writeFileSync('index.html', generateMarkdown(answers)))
         .then(() => console.log('Successfully wrote to index.html'))
