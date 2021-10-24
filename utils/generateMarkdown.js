@@ -2,12 +2,10 @@
 // If there is no license, return an empty string
 function renderLicenseBadge(data) {
    if(data.license == 'MIT'){
-    var link = '[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)';
+    return link = '[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)';
   }else{
-    var link = '';
+    return link = '';
   }
-
-  return link
 }
 
 // TODO: Create a function that returns the license link
