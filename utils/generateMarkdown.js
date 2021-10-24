@@ -59,7 +59,7 @@ function generateMarkdown(data) {
   ## Tests
   ${data.tests}
   ## Questions
-  ${data.email}`
+  Please send me an email ${data.email}`
 }
 
 module.exports = generateMarkdown;
