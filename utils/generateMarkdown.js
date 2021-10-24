@@ -31,14 +31,6 @@ function generateMarkdown(data) {
   ${renderLicenseBadge(data)}
 
   ${data.github}
-  
-  
-  
-  
- 
-  
-  
- 
 
   ## Description
   ${data.description}
@@ -67,7 +59,7 @@ function generateMarkdown(data) {
   ## Tests
   ${data.tests}
   ## Questions
-  # Please email me if you have any questions ${data.email}`
+  ${data.email}`
 }
 
 module.exports = generateMarkdown;
