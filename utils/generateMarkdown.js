@@ -23,7 +23,7 @@ function renderLicenseSection(license) {
 function generateMarkdown(data) {
   //console.log(github);
   return `# Me
-  ![Github license]()
+  
   
   ${data.github}
   ${data.email}
