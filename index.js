@@ -54,10 +54,10 @@ const askQuestions = () => {
     ]);
 }
 
-// TODO: Create a function to write README file
-function writeToFile(fileName, data) {
-    fs.writeFile(generateMarkdown(data))
-}
+// // TODO: Create a function to write README file
+// function writeToFile(fileName, data) {
+//     fs.writeFile(generateMarkdown(data))
+// }
 
 // TODO: Create a function to initialize app
 function init() {
